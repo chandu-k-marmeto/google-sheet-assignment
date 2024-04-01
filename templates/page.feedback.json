@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "custom-collections-tab",
+      "type": "feedback-form",
       "settings": {
       }
     }
