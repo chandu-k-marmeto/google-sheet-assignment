@@ -3,7 +3,7 @@
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -15,26 +15,22 @@
     display: block;
     margin-bottom: 5px;
     color: #000;
+    font-weight: bold;
   }
 
   input[type="text"],
   input[type="number"],
   textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     outline: none;
     transition: border-color 0.3s;
   }
 
-  input[type="text"]:focus,
-  input[type="number"]:focus,
-  textarea:focus {
-    border-color: #8a2be2;
-  }
 
   textarea {
     resize: vertical;
@@ -43,7 +39,7 @@
   .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
-    text-align: center;
+    text-align: left;
   }
 
   .rating input {
@@ -88,17 +84,16 @@
   }
 
   .checkbox input[type="checkbox"]:checked + label:before {
-    background-color: #8a2be2;
+    background-color: #4A3AFF;
   }
 
   .submit-btn {
     display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #8a2be2;
+    padding: 20px 50px;
+    background-color: #4A3AFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
