@@ -1,0 +1,65 @@
+{{ "feedback-form.css" |  asset_url |  stylesheet_tag }}
+
+<div class="container">
+  <form id="myForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+    <div class="form-group">
+      <label for="rating">Rating</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">☆</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">☆</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">☆</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">☆</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" name="feedback" placeholder="Enter your feedback"></textarea>
+    </div>
+    <div class="form-group checkbox">
+      <input type="checkbox" id="privacy_policy" name="privacy_policy">
+      <label for="privacy_policy">I accept the privacy policy</label>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+
+{% schema %}
+	{
+		"name": "feedback-form",
+		"settings": [
+			{
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+			},
+			{
+				"type": "range",
+				"id": "padding_top",
+				"min": 0,
+				"max": 100,
+				"step": 4,
+				"unit": "px",
+				"label": "t:sections.all.padding.padding_top",
+				"default": 36
+			},
+			{
+				"type": "range",
+				"id": "padding_bottom",
+				"min": 0,
+				"max": 100,
+				"step": 4,
+				"unit": "px",
+				"label": "t:sections.all.padding.padding_bottom",
+				"default": 36
+			}
+		]
+	}
+{% endschema %}
