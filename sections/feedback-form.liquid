@@ -32,6 +32,16 @@
   </form>
 </div>
 
+
+<script>
+
+  let submitBtn = document.querySelector("#myForm")
+  submitBtn.addEventListner("submit",(e)=>{
+    e.preventDefault()
+  })
+  
+</script>
+
 {% schema %}
 	{
 		"name": "feedback-form",
