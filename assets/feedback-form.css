@@ -35,7 +35,7 @@
   textarea {
     resize: vertical;
   }
-/* 
+
   .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
@@ -59,33 +59,8 @@
   .rating input:checked ~ label {
     color: #ffdd00;
   }
- */
 
-.rating {
-  display: flex;
-  align-items: center;
-}
 
-.rating input {
-  display: none;
-}
-
-.rating label {
-  cursor: pointer;
-}
-
-.rating label svg {
-  width: 30px;
-  height: 30px;
-  fill: #aaa;
-  transition: fill 0.3s;
-}
-
-.rating input:checked ~ label svg,
-.rating label:hover ~ input:checked ~ label svg,
-.rating label:hover svg {
-  fill: #ffdd00;
-}
 
   .checkbox label {
     display: inline-block;
