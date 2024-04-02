@@ -1,25 +1,25 @@
 {% comment %} {{ "feedback-form.css" |  asset_url |  stylesheet_tag }} {% endcomment %}
 
 {% style %}
-  .rating {
+  .Rating {
     unicode-bidi: bidi-override;
     direction: rtl;
     text-align: center;
   }
-  .rating > input {
+  .Rating > input {
     display: none;
   }
-  .rating > label {
+  .Rating > label {
     display: inline-block;
     padding: 5px;
     font-size: 30px;
     color: #ccc;
     cursor: pointer;
   }
-  .rating > label:before {
+  .Rating > label:before {
     content: '★';
   }
-  .rating > input:checked ~ label {
+  .Rating > input:checked ~ label {
     color: #ffcc00;
   }
 {% endstyle %}
@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <label for="Rating">Rating</label>
-      <div class="rating">
+      <div class="Rating">
         <input type="radio" id="star5" name="Rating" value="5" ><label for="star5">☆</label>
         <input type="radio" id="star4" name="Rating" value="4"><label for="star4">☆</label>
         <input type="radio" id="star3" name="Rating" value="3"><label for="star3">☆</label>
@@ -60,31 +60,31 @@
   <form action="https://script.google.com/macros/s/AKfycbw-frKNRWMiMKn48tkp0fq3OFueS45v9X8MTnRstSmu7BE6t8znBBY-QD8FBD11V_QPxw/exec" method="POST">
   <div>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="Name" required>
   </div>
   <div>
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <input type="tel" id="phone" name="Number" required>
   </div>
-  <div class="rating">
-    <label for="rating5">5</label>
-    <input type="radio" id="rating5" name="rating" value="5">
-    <label for="rating4">4</label>
-    <input type="radio" id="rating4" name="rating" value="4">
-    <label for="rating3">3</label>
-    <input type="radio" id="rating3" name="rating" value="3">
-    <label for="rating2">2</label>
-    <input type="radio" id="rating2" name="rating" value="2">
-    <label for="rating1">1</label>
-    <input type="radio" id="rating1" name="rating" value="1">
+  <div class="Rating">
+    <label for="Rating5">5</label>
+    <input type="radio" id="Rating5" name="Rating" value="5">
+    <label for="Rating4">4</label>
+    <input type="radio" id="Rating4" name="Rating" value="4">
+    <label for="Rating3">3</label>
+    <input type="radio" id="Rating3" name="Rating" value="3">
+    <label for="Rating2">2</label>
+    <input type="radio" id="Rating2" name="Rating" value="2">
+    <label for="Rating1">1</label>
+    <input type="radio" id="Rating1" name="Rating" value="1">
   </div>
   <div>
-    <input type="checkbox" id="terms" name="terms" required>
+    <input type="checkbox" id="terms" name="Policy" required>
     <label for="terms">I agree to the terms and conditions</label>
   </div>
   <div>
     <label for="feedback">Feedback:</label><br>
-    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+    <textarea id="feedback" name="Feedback" rows="4" cols="50"></textarea>
   </div>
   <div>
     <input type="submit" value="Submit">
