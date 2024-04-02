@@ -82,7 +82,7 @@
 }
 
 .rating input:checked ~ label svg,
-.rating label:hover ~ label svg,
+.rating label:hover ~ input:checked ~ label svg,
 .rating label:hover svg {
   fill: #ffdd00;
 }
