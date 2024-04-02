@@ -1,30 +1,7 @@
-{% comment %} {{ "feedback-form.css" |  asset_url |  stylesheet_tag }} {% endcomment %}
+{{ "feedback-form.css" |  asset_url |  stylesheet_tag }}
 
-{% style %}
-  .Rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-  }
-  .Rating > input {
-    display: none;
-  }
-  .Rating > label {
-    display: inline-block;
-    padding: 5px;
-    font-size: 30px;
-    color: #ccc;
-    cursor: pointer;
-  }
-  .Rating > label:before {
-    content: '★';
-  }
-  .Rating > input:checked ~ label {
-    color: #ffcc00;
-  }
-{% endstyle %}
 
-<!-- <div class="container">
+<div class="container">
   <form id="myForm" method="POST" action="https://script.google.com/macros/s/AKfycbw-frKNRWMiMKn48tkp0fq3OFueS45v9X8MTnRstSmu7BE6t8znBBY-QD8FBD11V_QPxw/exec">
     <div class="form-group">
       <label for="Name">Name</label>
@@ -54,43 +31,7 @@
     </div>
     <button type="submit" class="submit-btn">Submit</button>
   </form>
-</div> -->
-
-<div>
-  <form action="https://script.google.com/macros/s/AKfycbw-frKNRWMiMKn48tkp0fq3OFueS45v9X8MTnRstSmu7BE6t8znBBY-QD8FBD11V_QPxw/exec" method="POST">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="Name" required>
-  </div>
-  <div>
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="Number" required>
-  </div>
-  <div class="Rating">
-    <label for="Rating5">5</label>
-    <input type="radio" id="Rating5" name="Rating" value="5">
-    <label for="Rating4">4</label>
-    <input type="radio" id="Rating4" name="Rating" value="4">
-    <label for="Rating3">3</label>
-    <input type="radio" id="Rating3" name="Rating" value="3">
-    <label for="Rating2">2</label>
-    <input type="radio" id="Rating2" name="Rating" value="2">
-    <label for="Rating1">1</label>
-    <input type="radio" id="Rating1" name="Rating" value="1">
-  </div>
-  <div>
-    <input type="checkbox" id="terms" name="Policy" required>
-    <label for="terms">I agree to the terms and conditions</label>
-  </div>
-  <div>
-    <label for="feedback">Feedback:</label><br>
-    <textarea id="feedback" name="Feedback" rows="4" cols="50"></textarea>
-  </div>
-  <div>
-    <input type="submit" value="Submit">
-  </div>
-</form>
-</div>
+</div> 
 
 
 {% schema %}
