@@ -1,4 +1,28 @@
-{{ "feedback-form.css" |  asset_url |  stylesheet_tag }}
+{% comment %} {{ "feedback-form.css" |  asset_url |  stylesheet_tag }} {% endcomment %}
+
+{% style %}
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+  }
+  .rating > input {
+    display: none;
+  }
+  .rating > label {
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .rating > label:before {
+    content: '★';
+  }
+  .rating > input:checked ~ label {
+    color: #ffcc00;
+  }
+{% endstyle %}
 
 <div class="container">
   <form id="myForm" method="POST" action="https://script.google.com/macros/s/AKfycbw-frKNRWMiMKn48tkp0fq3OFueS45v9X8MTnRstSmu7BE6t8znBBY-QD8FBD11V_QPxw/exec">
