@@ -101,3 +101,9 @@
   .submit-btn:hover {
     background-color: #6a1a9a;
   }
+
+@media screen and (max-width:750px) {
+  .conytainer {
+    width : 90% ;
+  }
+}
