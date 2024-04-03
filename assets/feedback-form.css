@@ -1,113 +1,124 @@
 .container {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .form-group {
-    margin-bottom: 20px;
-  }
+.form-group {
+  margin-bottom: 20px;
+}
 
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #000;
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: bold;
+}
 
-  input[type="text"],
-  input[type="number"],
-  textarea {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    outline: none;
-    transition: border-color 0.3s;
-  }
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s;
+}
 
-  input[type="text"]:focus,
-  input[type="number"]:focus,
-  textarea:focus {
-    border-color: #8a2be2;
-  }
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #8a2be2;
+}
 
-  textarea {
-    resize: vertical;
-  }
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+color: #6F6C90;
+}
 
-  .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: left;
-  }
 
-  .rating input {
-    display: none;
-  }
+textarea {
+  resize: vertical;
+  padding-bottom: 40%;
+}
 
-  .rating label {
-    display: inline-block;
-    padding: 5px;
-    font-size: 25px;
-    color: #aaa;
-    cursor: pointer;
-  }
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
 
-  .rating label:hover,
-  .rating label:hover ~ label,
-  .rating input:checked ~ label {
-    color: #ffdd00;
-  }
+.rating input {
+  display: none;
+}
 
-  .checkbox label {
-    display: inline-block;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
+.rating label {
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+  color: #aaa;
+  cursor: pointer;
+}
 
-  .checkbox input[type="checkbox"] {
-    display: none;
-  }
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #ffdd00;
+}
 
-  .checkbox input[type="checkbox"] + label:before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-    border: 2px solid #ccc;
-    background-color: #fff;
-    border-radius: 3px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
+.checkbox label {
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #6F6C90;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 14px;
+}
 
-  .checkbox input[type="checkbox"]:checked + label:before {
-    background-color: #8a2be2;
-  }
+.checkbox input[type="checkbox"] {
+  display: none;
+}
 
-  .submit-btn {
-    display: block;
-    padding: 20px 50px;
-    background-color: #4A3AFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+.checkbox input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
-  .submit-btn:hover {
-    background-color: #6a1a9a;
-  }
+.checkbox input[type="checkbox"]:checked + label:before {
+  background-color: #8a2be2;
+}
 
-  @media screen and (max-width:750px) {
-    .container{
-      width: 90%;
-    }
+.submit-btn {
+  display: block;
+  padding: 20px 50px;
+  background-color: #4A3AFF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+@media screen and (max-width:750px) {
+  .container{
+    width: 90%;
   }
+}
