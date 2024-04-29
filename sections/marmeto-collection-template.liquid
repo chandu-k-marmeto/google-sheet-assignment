@@ -10,6 +10,7 @@
 }
 
 {{ "marmeto-custom-filter-styles.css" | assert_url | style_sheet }}
+<script src="{{ "marmeto-filter.js" | asset_url }}" defer></script>
   
 {%- endcapture -%}
 <section data-section-id="{{ section.id }}" data-section-type="marmeto-collection-template" data-section-settings='{{ section_settings }}'>        
