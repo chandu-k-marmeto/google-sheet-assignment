@@ -9,7 +9,7 @@
   "showOosLast": {{ section.settings.show_oos_last | json }}
 }
 
-{{ "marmeto-custom-filter-styles.css" | assert_url | style_sheet }}
+{{ "marmeto-custom-filter-styles.css" | assert_url | stylesheet_tag }}
 <script src="{{ "marmeto-filter.js" | asset_url }}" defer></script>
   
 {%- endcapture -%}
