@@ -9,8 +9,9 @@
   "showOosLast": {{ section.settings.show_oos_last | json }}
 }  
 {%- endcapture -%}
-{{ "marmeto-custom-filter-styles.css" | assert_url | stylesheet_tag }}
+{{ "marmeto-custom-filter-styles.css" | asset_url | stylesheet_tag }}
 <script src="{{ "marmeto-filter.js" | asset_url }}" defer></script>
+
 <section data-section-id="{{ section.id }}" data-section-type="marmeto-collection-template" data-section-settings='{{ section_settings }}'>        
   <div class="mmc-container">
     <div class="mmc-breadcrumb" role="navigation" aria-label="breadcrumbs">
