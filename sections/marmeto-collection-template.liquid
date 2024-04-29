@@ -8,6 +8,9 @@
   "excludeOosProducts": {{ section.settings.exclude_oos_products | json }},
   "showOosLast": {{ section.settings.show_oos_last | json }}
 }
+
+{{ "marmeto-custom-filter-styles.css" | assert_url | style_sheet }}
+  
 {%- endcapture -%}
 <section data-section-id="{{ section.id }}" data-section-type="marmeto-collection-template" data-section-settings='{{ section_settings }}'>        
   <div class="mmc-container">
