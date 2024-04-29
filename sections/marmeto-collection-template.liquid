@@ -7,12 +7,10 @@
   "productPerPage": {{ section.settings.product_per_page | json }},
   "excludeOosProducts": {{ section.settings.exclude_oos_products | json }},
   "showOosLast": {{ section.settings.show_oos_last | json }}
-}
-
+}  
+{%- endcapture -%}
 {{ "marmeto-custom-filter-styles.css" | assert_url | stylesheet_tag }}
 <script src="{{ "marmeto-filter.js" | asset_url }}" defer></script>
-  
-{%- endcapture -%}
 <section data-section-id="{{ section.id }}" data-section-type="marmeto-collection-template" data-section-settings='{{ section_settings }}'>        
   <div class="mmc-container">
     <div class="mmc-breadcrumb" role="navigation" aria-label="breadcrumbs">
