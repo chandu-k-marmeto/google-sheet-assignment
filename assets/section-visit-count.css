@@ -12,6 +12,9 @@
   font-weight: 500;
   line-height: normal;
 }
+.count__inner-container {
+    border-right: 2px solid rgba(42, 67, 28, 0.20);
+}
 @media screen and (min-width:750px) {
   .count__heading {
     font-size: 64px;
