@@ -1,16 +1,22 @@
 .count__heading {
   text-align: center;
-  font-family: Gotham;
-  font-size: 64px;
+  font-size: 46px;
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
 }
 .count_name {
   text-align: center;
-  font-family: Gotham;
-  font-size: 16px;
+  font-size: 11px;
   font-style: normal;
-  font-weight: 325;
+  font-weight: 500;
   line-height: normal;
+}
+@media screen and (min-width:750px) {
+  .count__heading {
+    font-size: 64px;
+  }
+  .count__name {
+    font-size: 16px;
+  }
 }
