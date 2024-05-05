@@ -1,6 +1,93 @@
+{% style %}
+.padding-{{ section.id}} {
+  padding-top: {{ section.settings.padding_top | divided_by:2 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | divided_by:2 }}px;
+}
+@media screen and (min-width:750px) {
+  .padding-{{ section.id}} {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
+
+<div class="padding-{{ section.id }}">
+  <div class="page-width">
+
+  </div>
+</div>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Visit Count Store",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "label": "Background color",
+      "id": "background_color",
+      "default": "#92ad83"
+    },
+    {
+      "type": "color",
+      "label": "Text color",
+      "id": "text_color",
+      "default": "#92ad83"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 48,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "Px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 48,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "Px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "count",
+      "name": "Count",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Count",
+          "id": "count",
+          "default": "100K+"
+        },
+        {
+          "type": "text",
+          "label": "Count name",
+          "id": "count_name",
+          "default": "Number of Customers"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visit Count Store"
+    }
+  ]
+}
 {% endschema %}
