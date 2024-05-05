@@ -32,12 +32,15 @@
       border-right: 0px;
     }
   }
-  .count__container:hover.count__inner-container::before  {
+  .count__inner-container::before  {
     position: absolute;
-    height: 160%;
+    height: 0%;
     content: "";
     width: 100%;
     top: -10%;
     left: 0;
+  }
+  .count__container:hover.count__inner-container::before  {
+    height: 160%;
   }
 }
