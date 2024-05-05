@@ -1,9 +1,9 @@
 {{ "section-visit-count.css" | asset_url | stylesheet_tag }}
 
 {% style %}
-  .padding-{{ section.id}} {
-    padding-top: {{ section.settings.padding_top | divided_by:2 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | divided_by:2 }}px;
+  .margin-{{ section.id}} {
+    margin-top: {{ section.settings.margin_top | divided_by:2 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | divided_by:2 }}px;
   }
   .count__heading, .count_name {
     color: {{ section.settings.text_color}};
@@ -24,15 +24,15 @@
     background-color: {{ section.settings.hover_background_color }};
   }
   @media screen and (min-width:750px) {
-    .padding-{{ section.id}} {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    .margin-{{ section.id}} {
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
 {% endstyle %}
 
-<div class="page-width padding-{{ section.id }}">
-  <div class="count__container">
+<div class="margin-{{ section.id }}">
+  <div class="count__container page-width">
     <div class="grid grid--2-col grid--4-col-desktop">
       {% for block in section.blocks %}
         <div class="grid__item">
@@ -86,12 +86,12 @@
     },
     {
       "type": "header",
-      "content": "Section padding"
+      "content": "Section margin"
     },
     {
       "type": "range",
-      "label": "Padding top",
-      "id": "padding_top",
+      "label": "margin top",
+      "id": "margin_top",
       "default": 48,
       "min": 0,
       "max": 100,
@@ -100,8 +100,8 @@
     },
     {
       "type": "range",
-      "label": "Padding bottom",
-      "id": "padding_bottom",
+      "label": "margin bottom",
+      "id": "margin_bottom",
       "default": 48,
       "min": 0,
       "max": 100,
