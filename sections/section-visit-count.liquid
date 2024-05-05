@@ -12,11 +12,13 @@
     text-shadow: -4px 2px 0px {{ section.settings.background_color }}, -6px 2px 0px #000;
   }
   .count__container {
-    background: {{ section.settings.background_color}};
+    background: {{ section.settings.background_color }};
   }
   .count__inner-container:hover {
-    color: {{ section.settings.hover_text_color}};
-    background-color: {{ section.settings.hover_background_color}};
+    .count__heading, .count_name {
+      color: {{ section.settings.hover_text_color }};
+    }
+    background-color: {{ section.settings.hover_background_color }};
   }
   @media screen and (min-width:750px) {
     .padding-{{ section.id}} {
