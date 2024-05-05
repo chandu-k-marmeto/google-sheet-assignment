@@ -36,5 +36,7 @@
   .count__inner-container:hover .count__inner-container::after {
     position: absolute;
     height: 120%;
+    content: "";
+    width: 100%;
   }
 }
