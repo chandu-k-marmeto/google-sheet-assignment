@@ -38,5 +38,7 @@
     content: "Chandu";
     width: 100%;
     background: red;
+    top: 0;
+    left: 0;
   }
 }
