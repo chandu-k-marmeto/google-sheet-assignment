@@ -1,0 +1,16 @@
+.count__heading {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.count_name {
+  text-align: center;
+  font-family: Gotham;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 325;
+  line-height: normal;
+}
