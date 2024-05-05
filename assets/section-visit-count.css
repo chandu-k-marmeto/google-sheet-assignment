@@ -25,7 +25,6 @@
   }
   .count__inner-container {
     border-right: 2px solid rgba(42, 67, 28, 0.20);
-    padding: 45px 0px;
   }
   .count__container .grid--4-col-desktop div:last-child {
     .count__inner-container {
