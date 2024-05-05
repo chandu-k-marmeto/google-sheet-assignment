@@ -35,7 +35,8 @@
   .count__inner-container:hover .count__inner-container::before  {
     position: absolute;
     height: 120%;
-    content: "";
+    content: "Chandu";
     width: 100%;
+    background: red;
   }
 }
