@@ -13,6 +13,9 @@
   line-height: normal;
   margin: 0px;
 }
+.count__inner-container {
+  padding: 20px 0px;
+}
 @media screen and (min-width:750px) {
   .count__heading {
     font-size: 64px;
