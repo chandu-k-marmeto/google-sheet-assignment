@@ -18,6 +18,9 @@
     .count__heading, .count_name {
       color: {{ section.settings.hover_text_color }};
     }
+    .count__heading {
+      text-shadow: -4px 2px 0px {{ section.settings.hover_background_color }}, -6px 2px 0px #000;
+    }
     background-color: {{ section.settings.hover_background_color }};
   }
   @media screen and (min-width:750px) {
