@@ -1,5 +1,6 @@
 .box-container {
   height: 200vh;
+  position:fixed;
 }
 #box {
   height: 100px;
