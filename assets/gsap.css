@@ -2,8 +2,8 @@
   height: 200vh;
 }
 .box {
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
   background-color: yellow;
   position: fixed;
   top: 0;
