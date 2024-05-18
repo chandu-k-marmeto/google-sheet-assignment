@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
           gsap.set(".box", boxSize);
           gsap.to(".box", {
               scrollTrigger: {
-                  trigger: "#box",
+                  trigger: ".box",
                   start: "top top",
                   end: "bottom top",
                   scrub: 2
