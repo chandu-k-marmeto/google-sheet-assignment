@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             trigger: ".box",
             start: "top top",
             end: "bottom bottom",
-            scrub: 2000
+            scrub: true
         },
          // x: "100vw", // Moves the box horizontally to the right
         y: "100vh", // Moves the box vertically to the bottom
