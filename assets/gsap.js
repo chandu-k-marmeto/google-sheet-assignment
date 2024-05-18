@@ -8,6 +8,6 @@ gsap.to(".box", {
         end: "bottom bottom",
         scrub: 2
     },
-    x: window.innerWidth - 200px,
-    y: window.innerHeight - 200px
+    x: window.innerWidth - 200,
+    y: window.innerHeight - 200
 });
