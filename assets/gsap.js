@@ -6,7 +6,7 @@ gsap.to(".box", {
     trigger: ".box-container",
     start: "top top",
     end: "bottom bottom",
-    scrub: 3,
+    scrub: 2,
   },
   x: () => window.innerWidth - 200,
   y: () => window.innerHeight - 200,
