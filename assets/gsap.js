@@ -13,5 +13,3 @@ gsap.to(".box", {
   width: 200,
   height: 200,
 });
-
-console.log(document.querySelector('.box-container').offsetHeight, document.querySelector('.box-container').getBoundingClientRect().right )
