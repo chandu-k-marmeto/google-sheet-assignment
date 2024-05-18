@@ -8,8 +8,8 @@ gsap.to(".box", {
         end: "bottom bottom",
         scrub: 2
     },
-    x: () => document.querySelector('.box-container').offsetHeight - 200,
-    y: () => document.querySelector('.box-container').getBoundingClientRect().right - 200,
+    x: () => document.querySelector('.box-container').getBoundingClientRect().right,
+    y: () => document.querySelector('.box-container').offsetHeight - 200,
   width: 200,
   height: 200
 });
