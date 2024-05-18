@@ -24,11 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
               y: yPosition
           });
       }
-
-      // Create a GSAP matchMedia instance
       const mm = gsap.matchMedia();
-
-      // Define responsive breakpoints
       mm.add("(max-width: 768px)", setupAnimation); // For screens up to 768px wide (mobile)
       mm.add("(min-width: 769px)", setupAnimation); 
 });
