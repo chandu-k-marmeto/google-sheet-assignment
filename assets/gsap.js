@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
                   end: "bottom top",
                   scrub: 2
               },
-              x: xPosition,
-              y: yPosition
+              x: xPosition - 200px,
+              y: yPosition - 200px
           });
       }
       const mm = gsap.matchMedia();
