@@ -6,7 +6,7 @@
   height: 100px;
   background-color: yellow;
   position: fixed;
-  direction:flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   text-align: center;
