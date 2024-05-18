@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to("#box", {
+    gsap.to(".box", {
         scrollTrigger: {
-            trigger: "#box",
+            trigger: ".box",
             start: "top top",
             end: "bottom top",
             scrub: true
