@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollTrigger: {
             trigger: ".box",
             start: "top top",
-            end: "bottom top",
+            end: "bottom bottom",
             scrub: true
         },
         y: "100vh", // Moves the box from top to bottom of the viewport
