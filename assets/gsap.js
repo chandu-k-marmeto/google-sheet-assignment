@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             end: "bottom bottom",
             scrub: true
         },
-        y: "100vh", // Moves the box from top to bottom of the viewport
+        y: "100vh",
         width: "200px",
         height: "200px"
     });
