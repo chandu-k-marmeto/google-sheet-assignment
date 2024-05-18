@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
               xPosition = "100vw";
               yPosition = "100vh";
           }
-          gsap.set("#box", boxSize);
-          gsap.to("#box", {
+          gsap.set(".box", boxSize);
+          gsap.to(".box", {
               scrollTrigger: {
                   trigger: "#box",
                   start: "top top",
