@@ -6,7 +6,7 @@ gsap.to(".box", {
         trigger: ".box-container",
         start: "top top",
         end: "bottom bottom",
-        scrub: true
+        scrub: 3
     },
     x: () => document.querySelector('.box-container').offsetHeight - 200,
     y: () => document.querySelector('.box-container').getBoundingClientRect().right - 200,
