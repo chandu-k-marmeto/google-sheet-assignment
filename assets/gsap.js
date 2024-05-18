@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
           });
       }
       const mm = gsap.matchMedia();
-      mm.add("(max-width: 768px)", setupAnimation); // For screens up to 768px wide (mobile)
+      mm.add("(max-width: 768px)", setupAnimation); 
       mm.add("(min-width: 769px)", setupAnimation); 
 });
