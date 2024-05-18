@@ -9,7 +9,7 @@ gsap.to(".box", {
         scrub: true
     },
     x: () => window.innerWidth - 200,
-    y: () => window.innerHeight,
+    y: () => window.innerHeight - 400,
   width: 200,
   height: 200
 });
