@@ -9,7 +9,7 @@ gsap.to(".box", {
         scrub: true
     },
     x: () => document.querySelector('.box-container').getBoundingClientRect().bottom - 200,
-    y: () => document.querySelector('.box-container').getBoundingClientRect().right - 200,
+    y: () => window.innerWidth - 200,
   width: 200,
   height: 200
 });
