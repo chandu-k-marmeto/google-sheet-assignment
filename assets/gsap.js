@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
             end: "bottom bottom",
             scrub: true
         },
-        y: "100vh",
+         x: "100vw", // Moves the box horizontally to the right
+        y: "100vh", // Moves the box vertically to the bottom
         width: "200px",
-        height: "200px"
+        height: "200px",
+        duration: 3 // Duration of the animation
     });
 });
