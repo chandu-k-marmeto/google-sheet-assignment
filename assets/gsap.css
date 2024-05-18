@@ -1,9 +1,11 @@
 .box-container {
   height: 200vh;
 }
-#box {
-  position:fixed;
-  height: 100px;
-  width: 100px;
-  background: yellow;
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
