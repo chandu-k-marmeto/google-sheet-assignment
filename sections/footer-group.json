@@ -4,7 +4,6 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "newsletter_enable": true,
